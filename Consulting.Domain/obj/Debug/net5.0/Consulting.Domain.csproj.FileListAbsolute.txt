@@ -1,0 +1,12 @@
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\bin\Debug\net5.0\Consulting.Domain.deps.json
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\bin\Debug\net5.0\Consulting.Domain.dll
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\bin\Debug\net5.0\ref\Consulting.Domain.dll
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\bin\Debug\net5.0\Consulting.Domain.pdb
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.AssemblyInfoInputs.cache
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.AssemblyInfo.cs
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.csproj.CoreCompileInputs.cache
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.dll
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\ref\Consulting.Domain.dll
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.pdb
+C:\Users\zaiz\source\repos\ConsultingDoc\Consulting.Domain\obj\Debug\net5.0\Consulting.Domain.csproj.AssemblyReference.cache
