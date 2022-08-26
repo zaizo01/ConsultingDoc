@@ -30,8 +30,9 @@ namespace Consulting.Api.Controllers
             try
             {
                 var entity = await genericRepository.GetById(id);
-                if (entity is null) return NotFound("Esta entidad no existe.");
-                return Ok(mapper.Map<DoctorGetDTO>(entity));
+                if (entity.Data is null) return NotFound("Esta entidad no existe.");
+                mapper.Map<DoctorGetDTO>(entity.Data);
+                return Ok(entity);
             }
             catch (Exception ex)
             {
@@ -45,7 +46,8 @@ namespace Consulting.Api.Controllers
             try
             {
                 var entities = await genericRepository.GetAll();
-                return Ok(mapper.Map<List<DoctorGetDTO>>(entities));
+                mapper.Map<List<DoctorGetDTO>>(entities.Data);
+                return Ok(entities);
             }
             catch (Exception ex)
             {
@@ -59,8 +61,7 @@ namespace Consulting.Api.Controllers
             try
             {
                 var entity = mapper.Map<Doctor>(DoctorPostDTO);
-                await genericRepository.Create(entity);
-                return Ok(entity);
+                return Ok(await genericRepository.Create(entity));
             }
             catch (Exception ex)
             {
@@ -74,8 +75,7 @@ namespace Consulting.Api.Controllers
             try
             {
                 var entity = mapper.Map<Doctor>(DoctorPutDTO);
-                await genericRepository.Update(entity);
-                return Ok(entity);
+                return Ok(await genericRepository.Update(entity));
             }
             catch (Exception ex)
             {
@@ -88,8 +88,8 @@ namespace Consulting.Api.Controllers
         {
             try
             {
-                await genericRepository.Delete(id);
-                return Ok("Entidad eliminada.");
+                var response = await genericRepository.Delete(id);
+                return Ok(response);
             }
             catch (Exception ex)
             {

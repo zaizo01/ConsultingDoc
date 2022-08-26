@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Consulting.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,11 @@ namespace Consulting.Service.Contract
     public interface IGenericRepository<T> where T : class
     {
 
-        Task<IEnumerable<T>> GetAll();
-        Task<T> GetById(Guid id);
-        Task<T> Create(T entity);
-        Task<T> Update(T entity);
-        Task<T> Delete(Guid id);
+        Task<Response<IEnumerable<T>>> GetAll();
+        Task<Response<T>> GetById(Guid id);
+        Task<Response<T>> Create(T entity);
+        Task<Response<T>> Update(T entity);
+        Task<Response<T>> Delete(Guid id);
         void Save();
 
         Task<int> SaveChangesAsync();
